@@ -1,9 +1,11 @@
 -------- Création du base de données et des tables -----------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS scolaire;
+DROP DATABASE IF  EXISTS scolaire;
+CREATE DATABASE scolaire;
 USE scolaire;
 
 -- Création de la table Ecole --
+DROP TABLE IF EXISTS ECOLE;
 CREATE TABLE ECOLE(
     id_ecole INT PRIMARY KEY AUTO_INCREMENT,
     Nom_ecole VARCHAR(50) NOT NULL,
@@ -15,6 +17,7 @@ CREATE TABLE ECOLE(
 );
 
 -- Création de la table Eleve --
+DROP TABLE IF EXISTS ELEVE;
 CREATE TABLE ELEVE(
     id_eleve INT PRIMARY KEY AUTO_INCREMENT,
     Nom_eleve VARCHAR(50) NOT NULL,
@@ -24,6 +27,7 @@ CREATE TABLE ELEVE(
 );
 
 --Création de la table Local --
+DROP TABLE IF EXISTS LOCAL;
 CREATE TABLE LOCAL(
     id_local INT PRIMARY KEY AUTO_INCREMENT,
     Etage INT NOT NULL,
@@ -34,6 +38,7 @@ CREATE TABLE LOCAL(
 );
 
 -- Création de la table Employe --
+DROP TABLE IF EXISTS EMPLOYE;
 CREATE TABLE EMPLOYE(
     id_employe INT PRIMARY KEY AUTO_INCREMENT,
     date_naissance DATE,
@@ -46,6 +51,7 @@ CREATE TABLE EMPLOYE(
 );
 
 -- Création de la table Cours --
+DROP TABLE IF EXISTS COURS;
 CREATE TABLE COURS(
     id_cours INT PRIMARY KEY AUTO_INCREMENT,
     Nom_cours VARCHAR(20) NOT NULL,
@@ -58,6 +64,7 @@ CREATE TABLE COURS(
 );
 
 -- Création de la table Travaille --
+DROP TABLE IF EXISTS TRAVAILLE;
 CREATE TABLE TRAVAILLE(
     id_travaille INT PRIMARY KEY AUTO_INCREMENT,
     id_employe INT,
@@ -67,6 +74,7 @@ CREATE TABLE TRAVAILLE(
 );
 
 -- Création de la table Évaluation  --
+DROP TABLE IF EXISTS EVALUATION;
 CREATE TABLE EVALUATION(
     id_evaluation INT PRIMARY KEY AUTO_INCREMENT,
     Date_evaluation DATE NOT NULL,
