@@ -53,7 +53,7 @@ Exemples de relations:
 ## Exécution du projet 🚀
 ### 1. Cloner le dépôt
 
->git clone https://github.com/votre-utilisateur/projet-base-donnees-scolaire.git
+>git clone [https://github.com/Marie-AnneRandria/Conception-et-gestion-du-base-de-donn-es-SCOLAIRE-mySQL-.git]
 
 ### 2. Ouvrir MySQL Workbench ou Visual Code
 ### 3. Importer le script SQL
